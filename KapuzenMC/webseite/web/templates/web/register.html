@@ -1,0 +1,16 @@
+{% extends 'web/base.html' %}
+
+{% block title %} BlockPost - Register {% endblock %}
+
+{% block authForm %}
+
+<form method="post" action="">
+    {% csrf_token %}
+    {{ register_form.as_p }}
+
+    <button type="submit">Register</button>
+
+
+</form>
+
+{% endblock %}
